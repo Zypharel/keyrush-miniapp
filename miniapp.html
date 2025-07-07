@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Оплата через Telegram Stars</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background: #121212;
+      color: white;
+      padding: 20px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 30px;
+      margin-top: 30px;
+      border: none;
+      background: #4caf50;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>💳 Оплата за ключ</h1>
+  <p>Нажмите кнопку ниже, чтобы оплатить 20 Telegram Stars.</p>
+
+  <button onclick="pay()">Оплатить 20 Stars</button>
+
+  <script>
+    Telegram.WebApp.ready();
+
+    function pay() {
+      Telegram.WebApp.openInvoice({
+        slug: "keyrush", // временно подставим заглушку
+        is_test: true     // включим тестовую оплату
+      });
+    }
+  </script>
+</body>
+</html>
