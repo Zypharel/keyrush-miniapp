@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0; padding: 0;
+  display: flex; flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+#searchInput {
+  margin-top: 15px;
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#marketplace {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+}
+
+.card p.description {
+  flex-grow: 1;
+  font-size: 14px;
+  color: #555;
+}
+
+.card p.price {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+footer {
+  background: #282c34;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
