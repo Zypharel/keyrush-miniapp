@@ -10,15 +10,21 @@
   <header>
     <h1>KeyRush Market</h1>
     <p>Маркетплейс Steam-ключей</p>
+
     <div id="auth-block" style="margin: 20px 0;">
-  <script async src="https://telegram.org/js/telegram-widget.js?15"
-          data-telegram-login="KeyRushAuthBot"
-          data-size="large"
-          data-userpic="false"
-          data-auth-url="https://zypharel.github.io/keyrush-miniapp/"
-          data-request-access="write">
-  </script>
-</div>
+      <script async src="https://telegram.org/js/telegram-widget.js?15"
+              data-telegram-login="KeyRushAuthBot"
+              data-size="large"
+              data-userpic="false"
+              <!--
+                Замените data-auth-url ниже на адрес вашего backend,
+                который обрабатывает POST запросы с авторизацией Telegram.
+                Например: https://ваш-домен/auth
+              -->
+              data-auth-url="https://your-backend.example.com/auth"
+              data-request-access="write">
+      </script>
+    </div>
 
     <input type="text" id="searchInput" placeholder="Поиск по товарам..." />
   </header>
