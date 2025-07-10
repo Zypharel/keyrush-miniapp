@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: keyrush-backend
+    env: python
+    buildCommand: ""
+    startCommand: python backend/backend.py
+    envVars:
+      - key: BOT_TOKEN
+        value: ваш_токен_бота
+    plan: free
